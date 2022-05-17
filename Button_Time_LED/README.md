@@ -8,12 +8,6 @@ Para isso foi utilizado as biblotécas: `driver/gpio.h` para utilizaçãos da __
 
 Para acessar a pasta main onde estão os códigos [clique aqui](main)
 
-<<<<<<< Updated upstream
 Ou acessar diretamente o código [main.c](main/main.c) - [configs.c](https://github.com/Matheus-Korth/Korth-Treinamento/blob/main/Button_Time_LED/main/configs.c)
 
 Ou volte ao [início](https://github.com/Matheus-Korth/Korth-Treinamento) do diretório.
-=======
-Ou acessar diretamente o código [main.c](main/main.c) - [configs.c](main/configs.c)
-
-Ou volte ao [início](https://github.com/Matheus-Korth/Korth-Treinamento) do diretório.
->>>>>>> Stashed changes
