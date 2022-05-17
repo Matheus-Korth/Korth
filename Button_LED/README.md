@@ -1,13 +1,15 @@
-## Manipulação de GPIO2
->___3 Botões e 1 led onde:___
-* Botão 1 pisca o led por 500ms
-* Botão 2 pisca o led por 1s
-* Botão 3 pisca o led por 1,5s
+## Manipulação de GPIO
+>___3 Botões e 3 led onde:___
+1. Cada botão acende um led.
+2. Caso seja mantido pressionado o led deve permanecer ligado.
+* Botão 1 acende o led Vermelho
+* Botão 2 acende o led Azul
+* Botão 3 acende o led Amarelo
 
-Para isso foi utilizado as biblotécas: `driver/gpio.h` para utilizaçãos da ___GPIOs___ - `freertos/FreeRTOS.h` e `freertos/task.h` utilizando a função ___vTaskDelay___ permitindo definir o tempo de manipulação que cada botão infire ao led.
+Para isso foi utilizado a biblotéca: `driver/gpio.h` para utilização das ___GPIOs___ configuração do led e dos botões
 
 Para acessar a pasta main onde estão os códigos [clique aqui](main)
 
-Ou acessar diretamente o código [main.c](main/main.c) - [configs.c](https://github.com/Matheus-Korth/Korth-Treinamento/blob/main/Button_Time_LED/main/configs.c)
+Ou acessar diretamente o código [main.c](main/main.c) - [confs.c](main/confs.c)
 
 Ou volte ao [início](https://github.com/Matheus-Korth/Korth-Treinamento) do diretório.
