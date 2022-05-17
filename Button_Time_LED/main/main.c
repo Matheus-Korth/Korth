@@ -34,5 +34,6 @@ void app_main(void)
         {
             gpio_set_level(LED, 0); // LED apagado
         }
+        vTaskDelay(10 / portTICK_RATE_MS);
     }
 }
