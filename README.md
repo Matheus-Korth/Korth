@@ -9,4 +9,9 @@
 >* botão 3 -> acende led amarelo
 >
 > O led deve permanecer aceso enquanto o botão tiver pressionado.
- 
+
+### [MANIPULAÇÃO DE GPIO 2](Button_LED/main)
+> Criar código com 3 botões e um led que irá executar as seguintes tarefas.
+>* botão 1 -> led pisca a cada 500ms
+>* botão 2 -> led pisca a cada 1000ms
+>* botão 3 -> led pisca a cada 1500ms
