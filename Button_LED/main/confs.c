@@ -44,5 +44,21 @@ void config_gpios()
     io_conf.pin_bit_mask = 1ULL << BOTAO_VERMELHO; /* seleciona pino 0 */
     gpio_config(&io_conf);                         /* passa configurações na função gpio_conf */
 
-    //gpio_set_direction(LED_VERMELHO, GPIO_MODE_OUTPUT);
+    // Botão Azul
+    io_conf.intr_type = GPIO_INTR_DISABLE;     /* desabilita interrupção */
+    io_conf.mode = GPIO_MODE_INPUT;            /* define como entrada */
+    io_conf.pull_down_en = 0;                  /* desabilita pull_down */
+    io_conf.pull_up_en = 1;                    /* habilita pull_up */
+    io_conf.pin_bit_mask = 1ULL << BOTAO_AZUL; /* seleciona pino 0 */
+    gpio_config(&io_conf);                     /* passa configurações na função gpio_conf */
+
+    // Botão Amarelo
+    io_conf.intr_type = GPIO_INTR_DISABLE;        /* desabilita interrupção */
+    io_conf.mode = GPIO_MODE_INPUT;               /* define como entrada */
+    io_conf.pull_down_en = 0;                     /* desabilita pull_down */
+    io_conf.pull_up_en = 1;                       /* habilita pull_up */
+    io_conf.pin_bit_mask = 1ULL << BOTAO_AMARELO; /* seleciona pino 0 */
+    gpio_config(&io_conf);                        /* passa configurações na função gpio_conf */
+
+    // gpio_set_direction(LED_VERMELHO, GPIO_MODE_OUTPUT);
 }

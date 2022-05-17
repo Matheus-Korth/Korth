@@ -4,5 +4,6 @@
   "idf.flashType": "UART",
   "files.associations": {
     "stdio.h": "c"
-  }
+  },
+  "idf.adapterTargetName": "esp32"
 }

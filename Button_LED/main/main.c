@@ -14,7 +14,7 @@
 void app_main(void)
 {
     config_gpios(); // chama a configuração das GPIOs
-    while (1)
+    while (1) // Estrutura de repetição
     {
         int level_vermelho = !gpio_get_level(BOTAO_VERMELHO);
         gpio_set_level(LED_VERMELHO, level_vermelho);
