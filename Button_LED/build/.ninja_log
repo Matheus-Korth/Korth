@@ -2464,3 +2464,13 @@
 136	1500	6744895176428200	esp-idf/esp32/ld/esp32.project.ld	5928c8cd903f87ff
 1500	2044	6744895181930150	Button_LED.elf	4548b12b3e0167c8
 2045	2233	6744895183961948	.bin_timestamp	aaeedd4d8212fe3f
+4	7564	6744904995230144	build.ninja	80b393e9e4cbd8e9
+44	101	6744116136386067	bootloader-prefix/src/bootloader-stamp/bootloader-build	3ae4324d76c7c5c0
+44	101	6744116136386067	bootloader/bootloader.elf	3ae4324d76c7c5c0
+44	101	6744116136386067	bootloader/bootloader.bin	3ae4324d76c7c5c0
+44	101	6744116136386067	bootloader/bootloader.map	3ae4324d76c7c5c0
+47	362	6744904999634271	esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_app_desc.c.obj	4b9ebba6e48031c8
+362	424	6744905000350289	esp-idf/app_update/libapp_update.a	e474d33b987051ef
+425	1758	6744905013501629	esp-idf/esp32/ld/esp32.project.ld	5928c8cd903f87ff
+1759	2357	6744905019528266	Button_LED.elf	4548b12b3e0167c8
+2358	2560	6744905021711575	.bin_timestamp	aaeedd4d8212fe3f
