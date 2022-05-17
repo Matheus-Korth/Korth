@@ -1,32 +1,15 @@
-# _Sample project_
+## Manipulação de GPIO
+>___3 Botões e 3 led onde:___
+1. Cada botão acende um led.
+2. Caso seja mantido pressionado o led deve permanecer ligado.
+* Botão 1 acende o led Vermelho
+* Botão 2 acende o led Azul
+* Botão 3 acende o led Amarelo
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+Para isso foi utilizado a biblotéca: `driver/gpio.h` para utilização das ___GPIOs___ configuração do led e dos botões
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+Para acessar a pasta main onde estão os códigos [clique aqui](main)
 
+Ou acessar diretamente o código [main.c](main/main.c) - [confs.c](main/confs.c)
 
-
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
-
-## Example folder contents
-
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
+Ou volte ao [início](https://github.com/Matheus-Korth/Korth-Treinamento) do diretório.
