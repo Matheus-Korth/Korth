@@ -1,5 +1,5 @@
 <h1 align="center">Treinamento</h1>
-<h4 align="justify">Este menu tem como objetivo acesso dinamico ao repositório e prermite direcionar-se até o projeto desejado clicando sobre ele.</h1>
+<h4 align="justify">Este menu tem como objetivo acesso dinâmico ao repositório e permite direcionar-se até o projeto desejado clicando sobre ele.</h1>
 
 ### [MANIPULAÇÃO DE GPIO](Button_LED)
 > Criar um código com 3 botões e 3 leds executando as seguintes tarefas:
