@@ -21,3 +21,7 @@
 >* botão 1 -> led acende e apaga com ciclo pwm de 50%
 >* botão 2 -> led acende e apaga com ciclo pwm de 75%
 >* botão 3 -> led acende e apaga com ciclo pwm de 100%
+
+### [MANIPULAÇÃO DE GPIO 4](Contador_Pulsos)
+> Criar um código que incremente um contador.
+>* Cada vez que um pulso é capturado na entrada do GPIO.
