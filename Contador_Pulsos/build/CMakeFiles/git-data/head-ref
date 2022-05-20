@@ -1,1 +1,28 @@
-b750c5a41b863b7495c47909aeb6c9a38b513c6c
+0000000000000000000000000000000000000000 4e70e70f0581253f10ad836df6b2660faac6ef24 Matheus Guedes <92537312+MatheusGattiGuedes@users.noreply.github.com> 1652464914 -0300	commit (initial): Initial commit
+4e70e70f0581253f10ad836df6b2660faac6ef24 a06c8b1b5cf1fccf1f031934152c8cad7858a062 Matheus Guedes <m.guedes@korth.com.br> 1652703593 -0300	commit: Create settings.json
+a06c8b1b5cf1fccf1f031934152c8cad7858a062 807bc480436b9364be1d4de10da4cd2e8f05a7d9 Matheus Guedes <m.guedes@korth.com.br> 1652724779 -0300	commit: save
+807bc480436b9364be1d4de10da4cd2e8f05a7d9 2c810e6fd2e43a09dc13a301da813f007937c337 Matheus Guedes <m.guedes@korth.com.br> 1652787176 -0300	commit: Fim
+2c810e6fd2e43a09dc13a301da813f007937c337 663a87aa033250f83ed90e13fe20584a118ced71 Matheus Guedes <m.guedes@korth.com.br> 1652787341 -0300	commit: build
+663a87aa033250f83ed90e13fe20584a118ced71 e1319b949afe57d6d62c0779fefa9aa2056d3778 Matheus Guedes <m.guedes@korth.com.br> 1652787461 -0300	commit: Update README.md
+e1319b949afe57d6d62c0779fefa9aa2056d3778 bfad17cb504ed62337950fdfcba9380fd5af231e Matheus Guedes <m.guedes@korth.com.br> 1652790030 -0300	pull --ff --progress origin: Fast-forward
+bfad17cb504ed62337950fdfcba9380fd5af231e 8c9ab126b5d3ca1c7289c7f80218fa6e510923c3 Matheus Guedes <m.guedes@korth.com.br> 1652790530 -0300	commit: new
+8c9ab126b5d3ca1c7289c7f80218fa6e510923c3 f9894f60bcc01f1a11d8bf875b47c4e246a2bc39 Matheus Guedes <m.guedes@korth.com.br> 1652790608 -0300	commit: Update CMakeLists.txt
+f9894f60bcc01f1a11d8bf875b47c4e246a2bc39 71d3b8245009154a3d2ad9fc73cca65248972286 Matheus Guedes <m.guedes@korth.com.br> 1652790849 -0300	commit: i
+71d3b8245009154a3d2ad9fc73cca65248972286 27a5d9805b838b6e24cd3ef027baa69e7727269b Matheus Guedes <m.guedes@korth.com.br> 1652790954 -0300	commit: i
+27a5d9805b838b6e24cd3ef027baa69e7727269b 4eb055d1851c95aee6e4e205d0b165160ba554d7 Matheus Guedes <m.guedes@korth.com.br> 1652791340 -0300	commit: ppp
+4eb055d1851c95aee6e4e205d0b165160ba554d7 69b5469387a4892fb1029b43f3f4c0aa29fc221a Matheus Guedes <m.guedes@korth.com.br> 1652791396 -0300	commit: u
+69b5469387a4892fb1029b43f3f4c0aa29fc221a 9bc61f8c60b7c0436e545dd052bec27d36721095 Matheus Guedes <m.guedes@korth.com.br> 1652791915 -0300	commit: Update settings.json
+9bc61f8c60b7c0436e545dd052bec27d36721095 7b6bed2636647c4f12970920b3f348c4ab04ee4a Matheus Guedes <m.guedes@korth.com.br> 1652792897 -0300	commit: fef
+7b6bed2636647c4f12970920b3f348c4ab04ee4a 4dfa885ce078982d5f7dcd1a03d5b12e466b9b13 Matheus Guedes <m.guedes@korth.com.br> 1652799498 -0300	commit: Manipulando gpio 2
+4dfa885ce078982d5f7dcd1a03d5b12e466b9b13 d336dc1d2f2f2c103299522d81731ec1667fd73b Matheus Guedes <m.guedes@korth.com.br> 1652804252 -0300	commit: e
+d336dc1d2f2f2c103299522d81731ec1667fd73b bd34bfa8d9371640cd6106c634b0d8035bb3eeb4 Matheus Guedes <m.guedes@korth.com.br> 1652804266 -0300	pull --ff --progress origin: Merge made by the 'ort' strategy.
+bd34bfa8d9371640cd6106c634b0d8035bb3eeb4 cb35a461659fe4ce3ed5974d813944ca0821d653 Matheus Guedes <m.guedes@korth.com.br> 1652804320 -0300	commit: Update README.md
+cb35a461659fe4ce3ed5974d813944ca0821d653 bbb13b358eab722864349e4c1e63fabd643c7844 Matheus Guedes <m.guedes@korth.com.br> 1652804346 -0300	commit: Update README.md
+bbb13b358eab722864349e4c1e63fabd643c7844 f33a8c810df52f1db21510f6e20ceaee6fcc6077 Matheus Guedes <m.guedes@korth.com.br> 1652804731 -0300	commit: s
+f33a8c810df52f1db21510f6e20ceaee6fcc6077 7b3088e7722d4607ec238710ffe792debe8663b8 Matheus Guedes <m.guedes@korth.com.br> 1652806540 -0300	commit: Inicio PWM LED
+7b3088e7722d4607ec238710ffe792debe8663b8 ad0b434a13abccc95e439dadf208e24e8ea53e75 Matheus Guedes <m.guedes@korth.com.br> 1652806578 -0300	pull --tags origin main: Merge made by the 'ort' strategy.
+ad0b434a13abccc95e439dadf208e24e8ea53e75 28335d7cca79484b9bd4fcef886115f14c36793f Matheus Guedes <m.guedes@korth.com.br> 1652810999 -0300	commit: 66y
+28335d7cca79484b9bd4fcef886115f14c36793f c9b275b169cfa5520fae8af5267728da984a3012 Matheus Guedes <m.guedes@korth.com.br> 1652883035 -0300	commit: Fim PWM
+c9b275b169cfa5520fae8af5267728da984a3012 88601a297409e99df339c6682dcd30cd60f23d8d Matheus Guedes <m.guedes@korth.com.br> 1652884152 -0300	commit: .
+88601a297409e99df339c6682dcd30cd60f23d8d b750c5a41b863b7495c47909aeb6c9a38b513c6c Matheus Guedes <m.guedes@korth.com.br> 1652884195 -0300	pull --ff --progress origin: Merge made by the 'ort' strategy.
+b750c5a41b863b7495c47909aeb6c9a38b513c6c b5d5d1fc6405b28e485f41bb5e7ac8ac2d852083 Matheus Guedes <m.guedes@korth.com.br> 1652897279 -0300	commit: new
