@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "config.h"
 #include "driver/gpio.h"       // Controle de GPIO.
 #include "esp_log.h"           // LOGs (É mais rapido e utiliza menos memória do que printf).
 #include "freertos/FreeRTOS.h" // Bibliotéca FreeRTOS.
@@ -6,10 +7,20 @@
 
 #define PULSER GPIO_NUM_5 // Define a GPIO05 como PULSER
 
-int pulsoAtual = 0; // Variavel responsavel por atualizar novos pulsos.
-int litros = 0;
+int pulsoAtual = 0;    // Variavel responsavel por atualizar novos pulsos.
+float ultimoPulso = 0; // Variavel local para comparação de novos valores de pulso.
+float litros = 0;
+int litros20 = 20000;
+int afericao = 1;
+int teste = 1;
 
 static const char *TAG = ":MAIN:"; // Identificador do log que indica os pulsos.
+
+TaskHandle_t xTaskHandleTarefas;
+void vTaskTarefas(void);
+
+TaskHandle_t xTaskHandleAfericao;
+void vTaskAfericao(void);
 
 TaskHandle_t xTaskHandleContador;
 void vTaskContador(void);
@@ -22,7 +33,7 @@ void isr_pulser(void) // Interrupção.
 void app_main(void)
 {
     // Cria a task responsavel por contar interrupções geradas pelo GPIO PULSER.
-    xTaskCreate(vTaskContador, "task_Contador", configMINIMAL_STACK_SIZE + 2048, NULL, 10, &xTaskHandleContador);
+    xTaskCreate(vTaskTarefas, "task_Tarefas", configMINIMAL_STACK_SIZE + 2048, NULL, 5, &xTaskHandleTarefas);
     vTaskDelay(pdMS_TO_TICKS(10)); // Pequeno delay antes de criar a interrupção.
 
     gpio_config_t io_conf;                     // Estrutura de configuração de gpio_config
@@ -36,24 +47,48 @@ void app_main(void)
     gpio_install_isr_service(ESP_INTR_FLAG_LEVEL3); // Vetor de Interrupção.
     gpio_isr_handler_add(PULSER, isr_pulser, NULL); // GPIO, Void que será chamado durante as interrupções, NULL.
 }
-int  ax = 1;
-void vTaskContador(void) // Task para contar os pulsos.
+
+void vTaskTarefas(void)
 {
-    int ultimoPulso = 0; // Variavel local para comparação de novos valores de pulso.
-    
-    while (1) // Estrutura de repetição para atualizar os valores de pulso recebidos pela interrupção.
+    while (1)
     {
         do
         {
-            if (ultimoPulso != pulsoAtual) // Se houver um novo pulso então..
+            if (afericao == 1)
             {
-                ultimoPulso = pulsoAtual;                               // Atualiza a variavel de ultimoPulso
-                ESP_LOGI(TAG, "Numero de pulsos = %d \n", ultimoPulso); // Mostra o valor do pulso atualizado.
-                ax++;
+                xTaskCreate(vTaskAfericao, "task_Afericao", configMINIMAL_STACK_SIZE + 2048, NULL, 2, &xTaskHandleAfericao);
+                afericao = 0;
             }
-        } while (ax <= 10);
+        } while (afericao == 1);
         vTaskDelay(pdMS_TO_TICKS(30)); // Evita crash no ESP32
-        ///ESP_LOGI(TAG, "Finalizado \n");
-        vTaskDelete(xTaskHandleContador);
     }
 }
+
+void vTaskAfericao(void)
+{
+    while (1) // Estrutura de repetição para atualizar os valores de pulso recebidos pela interrupção.
+    {
+        if (ultimoPulso != pulsoAtual) // Se houver um novo pulso então..
+        {
+            ultimoPulso = pulsoAtual;                                 // Atualiza a variavel de ultimoPulso
+            ESP_LOGI(TAG, "Numero de pulsos = %.2f \n", ultimoPulso); // Mostra o valor do pulso atualizado.
+        }
+        vTaskDelay(pdMS_TO_TICKS(30)); // Evita crash no ESP32
+    }
+}
+
+/*void vTaskContador(void) // Task para contar os pulsos.
+{
+    float ultimoPulso = 0; // Variavel local para comparação de novos valores de pulso.
+
+    while (1) // Estrutura de repetição para atualizar os valores de pulso recebidos pela interrupção.
+    {
+
+        if (ultimoPulso != pulsoAtual) // Se houver um novo pulso então..
+        {
+            ultimoPulso = pulsoAtual;                                 // Atualiza a variavel de ultimoPulso
+            ESP_LOGI(TAG, "Numero de pulsos = %.2f \n", ultimoPulso); // Mostra o valor do pulso atualizado.
+        }
+        vTaskDelay(pdMS_TO_TICKS(30)); // Evita crash no ESP32
+    }
+}*/
