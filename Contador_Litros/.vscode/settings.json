@@ -11,5 +11,8 @@
     "idf.portWin": "COM4",
     "idf.pythonBinPathWin": "C:\\Users\\Korth_Proj_Matheus\\.espressif\\python_env\\idf4.3_py3.8_env\\Scripts\\python.exe",
     "idf.toolsPathWin": "C:\\Users\\Korth_Proj_Matheus\\.espressif",
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "files.associations": {
+        "ledc.h": "c"
+    }
 }
