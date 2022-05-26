@@ -25,3 +25,7 @@
 ### [MANIPULAÇÃO DE GPIO 4](Contador_Pulsos)
 > Criar um código que incremente um contador.
 >* Cada vez que um pulso é capturado na entrada do GPIO.
+
+### [CONEXÃO BLUETOOTH](Contador_Litros)
+> Código permite calibrar, aferir e contabilizar litros.
+>* Utilizando comandos serial via bluetooth.
