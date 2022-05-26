@@ -2538,7 +2538,10 @@
                                 "help": "BR/EDR ACL maximum connections of bluetooth controller.\nEach connection uses 1.2KB static DRAM whenever the BT controller is enabled.",
                                 "id": "BTDM_CTRL_BR_EDR_MAX_ACL_CONN",
                                 "name": "BTDM_CTRL_BR_EDR_MAX_ACL_CONN",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    7
+                                ],
                                 "title": "BR/EDR ACL Max Connections",
                                 "type": "int"
                             },
@@ -2548,7 +2551,10 @@
                                 "help": "BR/EDR Synchronize maximum connections of bluetooth controller.\nEach connection uses 2KB static DRAM whenever the BT controller is enabled.",
                                 "id": "BTDM_CTRL_BR_EDR_MAX_SYNC_CONN",
                                 "name": "BTDM_CTRL_BR_EDR_MAX_SYNC_CONN",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    3
+                                ],
                                 "title": "BR/EDR Sync(SCO/eSCO) Max Connections",
                                 "type": "int"
                             },
@@ -6649,7 +6655,10 @@
                                 "help": "Maximum BT/BLE connection count",
                                 "id": "BT_ACL_CONNECTIONS",
                                 "name": "BT_ACL_CONNECTIONS",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    7
+                                ],
                                 "title": "BT/BLE MAX ACL CONNECTIONS(1~7)",
                                 "type": "int"
                             },
@@ -6719,7 +6728,10 @@
                                 "help": "Bluetooth Connection establishment maximum time, if connection time exceeds this value, the connection\nestablishment fails, ESP_GATTC_OPEN_EVT or ESP_GATTS_OPEN_EVT is triggered.",
                                 "id": "BT_BLE_ESTAB_LINK_CONN_TOUT",
                                 "name": "BT_BLE_ESTAB_LINK_CONN_TOUT",
-                                "range": null,
+                                "range": [
+                                    1,
+                                    60
+                                ],
                                 "title": "Timeout of BLE connection establishment",
                                 "type": "int"
                             },
@@ -6729,7 +6741,10 @@
                                 "help": "Bluetooth Device name length shall be no larger than 248 octets, If the broadcast data cannot contain\nthe complete device name, then only the shortname will be displayed, the rest parts that can't fit in\nwill be truncated.",
                                 "id": "BT_MAX_DEVICE_NAME_LEN",
                                 "name": "BT_MAX_DEVICE_NAME_LEN",
-                                "range": null,
+                                "range": [
+                                    32,
+                                    248
+                                ],
                                 "title": "length of bluetooth device name",
                                 "type": "int"
                             },

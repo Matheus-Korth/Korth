@@ -13,6 +13,10 @@
     "idf.toolsPathWin": "C:\\Users\\Korth_Proj_Matheus\\.espressif",
     "idf.flashType": "UART",
     "files.associations": {
-        "ledc.h": "c"
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "spp_acceptor.h": "c",
+        "*.inc": "c"
     }
 }

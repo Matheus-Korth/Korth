@@ -3,7 +3,7 @@
     "project_path":       "C:/Users/Korth_Proj_Matheus/Documents/Korth/Contador_Litros",
     "build_dir":          "C:/Users/Korth_Proj_Matheus/Documents/Korth/Contador_Litros/build",
     "config_file":        "C:/Users/Korth_Proj_Matheus/Documents/Korth/Contador_Litros/sdkconfig",
-    "config_defaults":    "",
+    "config_defaults":    "C:/Users/Korth_Proj_Matheus/Documents/Korth/Contador_Litros/sdkconfig.defaults",
     "app_elf":            "Contador_Litros.elf",
     "app_bin":            "Contador_Litros.bin",
     "git_revision":       "v4.3.2",
