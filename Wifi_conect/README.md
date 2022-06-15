@@ -11,7 +11,7 @@ Ou acessar diretamente o código [main.c](main/main.c)
 Você também pode acessar:
 [led.c](main/led.c)
 [timer.c](main/timer.c)
-[modulo_nvs](main/modulo_nvs.c.c)
+[modulo_nvs](main/modulo_nvs.c)
 [modulo_wifi.c](main/modulo_wifi.c)
 
 
