@@ -29,3 +29,7 @@
 ### [CONEXÃO BLUETOOTH](Contador_Litros)
 > Código permite calibrar, aferir e contabilizar litros.
 >* Utilizando comandos serial via bluetooth.
+
+### [CONEXÃO WI-FI](Wifi_conect)
+> Esté código se conecta a uma rede Wi-fi.
+>* Enquanto não estiver conectado a rede um LED pisca.
